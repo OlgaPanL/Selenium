@@ -15,7 +15,6 @@ public class PasteBinNewPateTitlePage extends AbstractPage {
     public PasteBinNewPateTitlePage(WebDriver webDriver, String title){
         super(webDriver);
     }
-
     public String getErrorMessageText(){
         return errorMessage.getText();
     }
@@ -25,7 +24,6 @@ public class PasteBinNewPateTitlePage extends AbstractPage {
     public String getCodeText(){
         return codeText.getText();
     }
-
     @Override
     protected AbstractPage openPage() {
         throw new RuntimeException();

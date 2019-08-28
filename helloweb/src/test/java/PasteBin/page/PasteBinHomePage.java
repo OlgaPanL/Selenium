@@ -32,15 +32,12 @@ public class PasteBinHomePage extends AbstractPage {
        new WebDriverWait(webDriver, 50);
         return this;
     }
-
     public  PasteBinNewPateTitlePage createNewPaste(String code, String title){
-
         newPasteInput.sendKeys(code);
         syntaxHighlightingSelect.click();
         pasteExpirationSelect.click();
         pasteNameInput.sendKeys(title);
         createNewPasteButton.click();
         return new PasteBinNewPateTitlePage(webDriver, title);
-
     }
 }

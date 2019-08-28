@@ -25,7 +25,6 @@ public class WebDriverPasteBin {
     public void browserSetup(){
          webDriver = new ChromeDriver();
     }
-
     @Test (description = "Just first test, JIRA binding can be here")
     public void createNewPasteHelloWeb() {
         PasteBinNewPateTitlePage pasteBinNewPateTitlePage = new PasteBinHomePage(webDriver)
